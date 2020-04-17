@@ -9,11 +9,12 @@
       <tag>HEAD</tag>
   </scm>
 	
-	<!-- Repository Information -->
+	
+	<!--
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
-			<!-- http://localhost:8081/repository/<repository-name> -->
+		
 			<url>http://localhost:8081/repository/api-release</url>
 		</repository>
 	</distributionManagement>
@@ -35,7 +36,7 @@
 								<configuration>
 									<tasks>
 										<echo>Using env.test.properties</echo>
-										<!-- Using predefined maven properties mentioned in https://github.com/arpitaggarwal/predefined_maven_properties -->
+									
 										<copy file="src/main/resources/env.test.properties" tofile="${project.build.outputDirectory}/env.properties" />
 									</tasks>
 								</configuration>
@@ -72,6 +73,7 @@
 			</build>
 		</profile>
 	</profiles>
+	-->
 	<build>
 	 <pluginManagement>
 		<plugins>
